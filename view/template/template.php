@@ -13,14 +13,14 @@
     </head>
     <body class="container-fluid">
         <header class="col-lg-1">            
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                         <i class="fas fa-bars fa-lg"></i>
                 </button>                
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav nav-pills navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href=""><img src="public/img/menufront/home.png" alt="house icon"></a></li>
-                        <li class="nav-item"><a class="nav-link" href=""><img src="public/img/menufront/passport.png" alt="passport icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php"><img src="public/img/menufront/home.png" alt="house icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?action=passport"><img src="public/img/menufront/passport.png" alt="passport icon"></a></li>
                         <li class="nav-item"><a class="nav-link" href=""><img src="public/img/menufront/tshirt.png" alt="tshirt icon"></a></li> 
                     </ul>
                     <ul class="nav nav-pills navbar-nav">
@@ -29,10 +29,8 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="listActivities">
-                <?= $content ?>
-            </section>            
+        <main class="col-lg-11">
+            <?= $content ?>
         </main>
     </body>
 </html>

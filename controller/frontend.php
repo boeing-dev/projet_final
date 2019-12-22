@@ -1,6 +1,7 @@
 <?php
 require_once('model/ActivityManager.php');
 require_once('model/DetailManager.php');
+require_once('model/PassportManager.php');
 
 
 function listActivity($id) {
@@ -16,6 +17,13 @@ function firstIdActivity() {
     $activityManager = new ActivityManager();
     $id = $activityManager->getFirstId();
     return $id;
+}
+
+function viewPassport() {
+    $passportManager = new PassportManager();
+    $countries = $passportManager->getListCountries();
+    
+    require ('view/frontend/passport.php');
 }
 
 

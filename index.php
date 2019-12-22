@@ -5,9 +5,12 @@ require('controller/frontend.php');
 try {    
     if (isset($_GET['action'])) {
         switch ($_GET['action']){
-            case 'detailActivity':
+            case 'detailActivity' :
                 listActivity($_GET['id']);
-                break;            
+                break;
+            case 'passport' :
+                viewPassport();
+                break;
         }
     } else {        
         $id = firstIdActivity();

@@ -111,12 +111,11 @@ h1 div{
 
 main {
     overflow: auto;
-}
-
-#listActivities {
     display: flex;
+    padding: 0 !important;
 }
 
+/* ---------- HOME PAGE ---------- */
 /* ---------- MAIN PAGE LIST ACTIVITY ---------- */
 
 #listActivity {
@@ -140,7 +139,7 @@ main {
 .activity {
     display: flex;
     height: 15vh;
-    padding: 0 2%;
+    padding-left: 2%;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
 }
@@ -203,7 +202,6 @@ main {
     background-color: #e6e7e7;
     height: 100vh;
     padding: 0 !important;
-    margin-left: 2%;
 }
 
 #photoDatail {
@@ -269,6 +267,90 @@ main {
     color: #5a5a5a;
     font-family: 'roboto';
 }
+
+/* ---------- PASSPORT PAGE ---------- */
+
+#imgSide {
+    background-image: url("../img/passport/bck_passport.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#countriesList {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+}
+
+#countriesList li {
+    list-style: none;
+    position: relative;
+    margin: 2vh 1vh;
+}
+
+#countriesList li h2 {
+    padding-left: 10%;
+    color: #fff;
+    font-family: 'coolvetica';
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    margin: 0;
+    width: 30vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    
+}
+
+#countriesList li img {
+    width: 30vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
