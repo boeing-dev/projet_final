@@ -269,8 +269,9 @@ main {
 }
 
 /* ---------- PASSPORT PAGE ---------- */
+/* ---------- PAGE OF COUNTRIES ---------- */
 
-#imgSide {
+.imgSide {
     background-image: url("../img/passport/bck_passport.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,6 +306,51 @@ main {
 
 #countriesList li img {
     width: 30vh;
+}
+
+/* ---------- PAGE ACTIVITIES OF COUNTRY ---------- */
+
+#colorTitleBlue {
+    color: #035e82;
+}
+
+#colorTitleRed {
+    color: #a73732;
+}
+
+#colorTitlePurple {
+    color: #602481;
+}
+
+#menuActivities {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    padding: 0 !important;
+}
+
+#menuActivities li {
+    list-style-type: none;
+    position: relative;
+    width: 15vw;
+}
+
+#menuActivities li h2 {
+    position: absolute;
+    height: 5vh;
+    font-size: 1.8em;
+    font-family: 'coolvetica';
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+#menuActivities li img {
+    width: 15vw;
+}
+
+.activityActive {
+    box-shadow: 0.3em 0.3em 0 #fff;
 }
 
 

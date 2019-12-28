@@ -26,5 +26,20 @@ function viewPassport() {
     require ('view/frontend/passport.php');
 }
 
+function ListActivitiesCountry($idCountry, $typeActivity, $idActivity) {
+    $activityManager = new ActivityManager();
+    $listActivitiesCountry = $activityManager->getListActivitiesCountry($idCountry, $typeActivity);
+    $detailManager = new DetailManager();
+    $detail = $detailManager->getDetailActivity($idActivity);
+    
+    require ('view/frontend/activitiesCountry.php');
+}
+
+function firstIdActivityCountry($idCountry, $idActivity) {
+    $activityManager = new ActivityManager();
+    $id = $activityManager->getFirstIdCountry($idCountry, $idActivity);
+    return $id;
+}
+
 
 
