@@ -11,7 +11,7 @@
         <script src="https://kit.fontawesome.com/9f5978fa26.js"></script>
         <link href="public/css/frontend/styleFront.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="container-fluid" id="template">
+    <body class="container-fluid" id="connectionPage">
         <header class="col-lg-1">            
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
