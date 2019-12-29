@@ -20,6 +20,9 @@ try {
                 }
                 listActivitiesCountry($_GET['id'], $_GET['tpActivity'], $_GET['idActivity']);
                 break;
+            case 'donation' :
+                require ('view/frontend/donation.php');
+                break;
         }
     } else {        
         $id = firstIdActivity();

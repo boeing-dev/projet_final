@@ -41,12 +41,16 @@
 /* ---------- GENERAL ---------- */
 
 body {
-    background-image: url("../img/background.png");
-    background-size: cover;
+    
     display: flex;
     height: 100vh;
     padding: 0 !important;
     margin: 0 !important;
+}
+
+#template {
+    background-image: url("../img/background.png");
+    background-size: cover;
 }
 
 /* ---------- HEADER ---------- */
@@ -353,9 +357,85 @@ main {
     box-shadow: 0.3em 0.3em 0 #fff;
 }
 
+/* ---------- PAGE DONATION ---------- */
 
+#donationPage {
+    background-image: url(../img/donation/bckdonation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#donationBLock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#donationArticle {
+    width: 32%;
+    height: 63vh;
+    background-color: #fff;
+    text-align: center;
+    opacity: 95%;
+    padding: 2.5%;
+    background-image: url(../img/donation/wave.png);
+    background-repeat: no-repeat;
+    background-size: 126vh;
+    background-position: bottom;
+}
+
+#donationArticle img {
+    width: 20%;
+}
+
+#donationArticle h1 {
+    color: #000;
+    font-family: 'coolvetica';
+    font-weight: normal;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0.83em 0;
+}
+
+#donationArticle p {
+    font-family: 'roboto';
+    font-size: 0.95em;
+    color: #5a5a5a;
+    margin: 1em 0;
+}
+
+.listbtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.listbtn .btn_buy{
+    background-color: #025e83;
+    height: 6vh;
+    color: white;
+    font-family: 'roboto';
+    padding: 1%;
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.listbtn .btn_back{
+    width: 4vh;
+    background-color: #025e83;
+    height: 6vh;
+    color: white;
+    font-family: 'roboto';
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listbtn a{
+    text-decoration: none;
+}
 
 
 
