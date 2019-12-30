@@ -4,7 +4,7 @@ require_once('Manager.php');
 class ActivityManager extends Manager {
     public function getActivity() {
         $db = $this->dbConnect();
-        $activity = $db->query('SELECT activity.id, activities.typeActivity, activity.title, activity.town, activity.localisation, countries.flag, activity.note, activity.photo FROM activity 
+        $activity = $db->query('SELECT activity.id, activities.typeActivity, activity.title, activity.town, activity.localisation, countries.flag, activity.note, activity.photo, activity.visibility FROM activity 
         INNER JOIN countries ON activity.country = countries.id 
         INNER JOIN activities ON activity.typeActivity = activities.id 
         INNER JOIN frequencies ON activity.frequency = frequencies.id');

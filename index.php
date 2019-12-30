@@ -1,5 +1,6 @@
 <?php
 
+require('controller/backend.php');
 require('controller/frontend.php');
 require('controller/security.php');
 
@@ -32,13 +33,14 @@ try {
                 $password = checkContent($_POST['password']);
                 $accessDashboard = checkAccess($login, $password);
                 if ($accessDashboard) {
-                    require ('view/backend/dashboard.php');
+                    listActivitiesBack();
                 }
                 break;
         }
     } else {        
         $id = firstIdActivity();
         listActivity($id);
+        
     }
 }
 

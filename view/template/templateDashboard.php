@@ -9,9 +9,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/9f5978fa26.js"></script>
-        <link href="public/css/frontend/styleFront.css" rel="stylesheet" type="text/css">
+        <link href="public/css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="container-fluid" id="template">
+    <body class="container-fluid" id="connectionPage">
         <header class="col-lg-1">            
             <nav class="navbar navbar-expand-lg">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -24,7 +24,9 @@
                         <li class="nav-item"><a class="nav-link" href="index.php?action=donation"><img src="public/img/menufront/tshirt.png" alt="tshirt icon"></a></li> 
                     </ul>
                     <ul class="nav nav-pills navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.php?action=connection"><img src="public/img/menufront/profil.png" alt="profil icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="public/img/menufront/list.png" alt="liste des articles"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="public/img/menufront/add_article.png" alt="ajout d'un article"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php"><img src="public/img/menufront/deconnexion.png" alt="deconnexion du back office"></a></li>
                     </ul>
                 </div>
             </nav>

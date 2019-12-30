@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: 'coolvetica';
-    src: url('../../fonts/coolvetica_rg-webfont.eot');
-    src: url('../../fonts/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/coolvetica_rg-webfont.woff2') format('woff2'),
-    url('../../fonts/coolvetica_rg-webfont.woff') format('woff'),
-    url('../../fonts/coolvetica_rg-webfont.ttf') format('truetype'),
-    url('../../fonts/coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
+    src: url('../fonts/coolvetica_rg-webfont.eot');
+    src: url('../fonts/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/coolvetica_rg-webfont.woff2') format('woff2'),
+    url('../fonts/coolvetica_rg-webfont.woff') format('woff'),
+    url('../fonts/coolvetica_rg-webfont.ttf') format('truetype'),
+    url('../fonts/coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'untitled';
-    src: url('../../fonts/eaglethunder-webfont.eot');
-    src: url('../../fonts/eaglethunder-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/eaglethunder-webfont.woff2') format('woff2'),
-    url('../../fonts/eaglethunder-webfont.woff') format('woff'),
-    url('../../fonts/eaglethunder-webfont.ttf') format('truetype'),
-    url('../../fonts/eaglethunder-webfont.svg#untitledregular') format('svg');
+    src: url('../fonts/eaglethunder-webfont.eot');
+    src: url('../fonts/eaglethunder-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/eaglethunder-webfont.woff2') format('woff2'),
+    url('../fonts/eaglethunder-webfont.woff') format('woff'),
+    url('../fonts/eaglethunder-webfont.ttf') format('truetype'),
+    url('../fonts/eaglethunder-webfont.svg#untitledregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -26,12 +26,12 @@
 
 @font-face {
     font-family: 'roboto';
-    src: url('../../fonts/roboto-regular-webfont.eot');
-    src: url('../../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/roboto-regular-webfont.woff2') format('woff2'),
-    url('../../fonts/roboto-regular-webfont.woff') format('woff'),
-    url('../../fonts/roboto-regular-webfont.ttf') format('truetype'),
-    url('../../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff'),
+    url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -49,7 +49,7 @@ body {
 }
 
 #template {
-    background-image: url("../../img/background.png");
+    background-image: url("../img/background.png");
     background-size: cover;
 }
 
@@ -90,6 +90,11 @@ nav.navbar {
     width: 6vh;
     margin-top: 3.5vh;
 }
+
+/* ------------------------------ */
+/* ---------- FRONTEND ---------- */
+/* ------------------------------ */
+
 
 /* ---------- TITLE MAIN PAGE ACTIVITY ---------- */
 
@@ -276,7 +281,7 @@ main {
 /* ---------- PAGE OF COUNTRIES ---------- */
 
 .imgSide {
-    background-image: url("../../img/passport/bck_passport.png");
+    background-image: url("../img/passport/bck_passport.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -360,7 +365,7 @@ main {
 /* ---------- PAGE DONATION ---------- */
 
 #donationPage {
-    background-image: url(../../img/donation/bckdonation.png);
+    background-image: url(../img/donation/bckdonation.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -378,7 +383,7 @@ main {
     text-align: center;
     opacity: 95%;
     padding: 2.5%;
-    background-image: url(../../img/donation/wave.png);
+    background-image: url(../img/donation/wave.png);
     background-repeat: no-repeat;
     background-size: 126vh;
     background-position: bottom;
@@ -440,7 +445,7 @@ main {
 /* ---------- PAGE CONNECTION ---------- */
 
 #connectionPage {
-    background-image: url(../../img/connexion/backgroundback.png);
+    background-image: url(../img/connexion/backgroundback.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -525,6 +530,84 @@ input[type=text],input[type=password] {
     text-decoration: none;
 }
 
+/* ----------------------------- */
+/* ---------- BACKEBD ---------- */
+/* ----------------------------- */
+
+#listActivities {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 !important;
+    flex-direction: column;
+}
+
+#headerList {
+    
+    width: 55%;
+    position: relative;
+}
+
+#headerList img {
+    width: 100%;
+}
+
+#headerList h1 {
+    position: absolute;
+    top: 10vh;
+    margin: 5%;
+    font-weight: 100;
+    font-family: 'coolvetica';
+    font-size: 3em;
+}
+
+#blockList {
+    width: 55%;
+    background-color: #d2d2d2;  
+}
+
+.activityLittleList {
+    height: 7vh;
+    margin: 1vh 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.activityLittleList img {
+    height: 7vh;
+}
+
+.identityBlock {
+    display: flex;
+    width: 50%;
+}
+
+.blockColor {
+    width: 2%;
+    height: 7vh;
+}
+
+.blockTitle, .blockStatus {
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    font-family: 'roboto';
+    color: #5a5a5a;
+    font-size: 0.9em;
+/*    width: auto;*/
+    font-weight: normal;
+}
+
+.actionBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionBlock .far {
+    font-size: 2em;
+    padding-right: 2vh;
+}
 
 
 
