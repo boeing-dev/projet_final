@@ -6,7 +6,7 @@ require_once('model/PassportManager.php');
 
 function listActivity($id) {
     $activityManager = new ActivityManager();
-    $activity = $activityManager->getActivity();
+    $activity = $activityManager->getActivities();
     $detailManager = new DetailManager();
     $detail = $detailManager->getDetailActivity($id);
     

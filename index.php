@@ -23,10 +23,10 @@ try {
                 listActivitiesCountry($_GET['id'], $_GET['tpActivity'], $_GET['idActivity']);
                 break;
             case 'donation' :
-                require ('view/frontend/donation.php');
+                require('view/frontend/donation.php');
                 break;
             case 'connection' :
-                require ('view/frontend/dashboardConnection.php');
+                require('view/frontend/dashboardConnection.php');
                 break;
             case 'login' :
                 $login = checkContent($_POST['login']);
@@ -35,6 +35,44 @@ try {
                 if ($accessDashboard) {
                     listActivitiesBack();
                 }
+                break;
+            case 'deleteView' :
+                deleteView($_GET['id']);
+                break;
+            case 'dashboard' :
+                listActivitiesBack();
+                break;
+            case 'deleteActivity' :
+                deleteActivity($_GET['id']);
+                break;
+            case 'countryList' :
+                listCountryUsable();
+                break;
+            case 'manageCountry' :
+                manageCountry($_GET['id']);
+                break;
+            case 'modifyCountry' :
+                if (!isset($_POST['view'])) {
+                    $_POST['view']=0;
+                } else {
+                    $_POST['view']=1;
+                }
+                modifyCountry($_POST, $_FILES);
+            break;
+            case 'viewActivity' :
+                viewActivity($_GET['id']);
+            break;
+            case 'modifyActivity' :
+                modifyActivity($_GET['id']);
+                break;
+            case 'updateActivity' :
+                updateActivity($_POST, $_FILES);
+                break;
+            case 'viewNewActivity' :
+                newActivity();
+                break;
+            case 'addActivity' :
+                addActivity($_POST, $_FILES);
                 break;
         }
     } else {        

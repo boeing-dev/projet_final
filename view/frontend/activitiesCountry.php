@@ -42,7 +42,7 @@
     </div>
     <div id="blockRateFlag">
         <div class="rate">
-            <h2>Kouri Bride - Okinawa</h2>
+            <h2><?= $dataActivity['title']." - ".$dataActivity['town'] ?></h2>
             <ul class="liststar">
                 <?php
                 for($i=0; $i<$dataActivity['note']; $i++){

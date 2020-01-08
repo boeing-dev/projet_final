@@ -23,9 +23,10 @@
                         <li class="nav-item"><a class="nav-link" href="index.php?action=passport"><img src="public/img/menufront/passport.png" alt="passport icon"></a></li>
                         <li class="nav-item"><a class="nav-link" href="index.php?action=donation"><img src="public/img/menufront/tshirt.png" alt="tshirt icon"></a></li> 
                     </ul>
-                    <ul class="nav nav-pills navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="public/img/menufront/list.png" alt="liste des articles"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="public/img/menufront/add_article.png" alt="ajout d'un article"></a></li>
+                    <ul class="nav nav-pills navbar-nav">                        
+                        <li class="nav-item"><a class="nav-link" href="index.php?action=countryList"><img src="public/img/menufront/tool.png" alt="outils"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?action=dashboard"><img src="public/img/menufront/list.png" alt="liste des articles"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?action=viewNewActivity"><img src="public/img/menufront/add_article.png" alt="ajout d'un article"></a></li>
                         <li class="nav-item"><a class="nav-link" href="index.php"><img src="public/img/menufront/deconnexion.png" alt="deconnexion du back office"></a></li>
                     </ul>
                 </div>

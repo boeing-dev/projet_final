@@ -91,6 +91,10 @@ nav.navbar {
     margin-top: 3.5vh;
 }
 
+#tool {
+    color: #fff;
+}
+
 /* ------------------------------ */
 /* ---------- FRONTEND ---------- */
 /* ------------------------------ */
@@ -531,8 +535,11 @@ input[type=text],input[type=password] {
 }
 
 /* ----------------------------- */
-/* ---------- BACKEBD ---------- */
+/* ---------- BACKEND ---------- */
 /* ----------------------------- */
+
+
+/* ---------- DASHBOARD ---------- */
 
 #listActivities {
     display: flex;
@@ -543,7 +550,7 @@ input[type=text],input[type=password] {
 
 #headerList {
     
-    width: 55%;
+    width: 60%;
     position: relative;
 }
 
@@ -558,10 +565,11 @@ input[type=text],input[type=password] {
     font-weight: 100;
     font-family: 'coolvetica';
     font-size: 3em;
+    width: 60%;
 }
 
 #blockList {
-    width: 55%;
+    width: 60%;
     background-color: #d2d2d2;  
 }
 
@@ -594,7 +602,6 @@ input[type=text],input[type=password] {
     font-family: 'roboto';
     color: #5a5a5a;
     font-size: 0.9em;
-/*    width: auto;*/
     font-weight: normal;
 }
 
@@ -609,13 +616,367 @@ input[type=text],input[type=password] {
     padding-right: 2vh;
 }
 
+/* ---------- DELETE PAGE ---------- */
+
+#activityToDelete {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 !important;
+    flex-direction: column;
+/*    background-color: #d2d2d2;*/
+    height: 100vh;
+}
+
+#deleteBlock {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #d2d2d2;
+    margin-top: 3vh;
+}
+
+#deleteBlock div:first-child {
+    font-family: 'collvetica';
+    font-size: 2em;
+    padding: 1%;
+}
+
+#deleteBlock div:nth-child(2) img {
+    width: 10vh;
+    margin: 1%;
+}
+
+#deleteBlock div:last-child {
+    display: flex;
+}
+
+#deleteBlock div:last-child p {
+    width: 50%;
+    overflow: hidden;
+    padding: 2%;
+}
+
+#deleteBlock div:last-child img {
+    width: 50%;
+    padding: 2%;
+}
+
+#deleteButton {
+    width: 60%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    background-color: #d2d2d2;
+}
+
+#deleteButton a {
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#deleteButton a:hover {
+    text-decoration: none;
+    box-shadow: inset 3px 3px 3px #5a5a5a;
+}
+
+/* ---------- GESTIONNAIRE DES PAYS ---------- */
+/* ---------- AFFICHAGE LISTE DES PAYS ---------- */
+
+#countryManager div figure a img {
+    width: 10vh;
+}
+
+#countryManager figure {
+    margin: 0 0.5vh 0.5vh;
+}
+
+#listUsable div, #listUnusable div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#countryManager div figure figcaption {
+    font-size: 0.8em;
+    width: 10vh;
+    color: #fff;
+}
+
+/* ---------- FORMULAIRE DE MODIFICATION DE PAYS ---------- */
+
+#modifyCountry h1 {
+    font-family: 'coolvetica';
+    margin: 5vh 0;
+}
+#modifyCountry img {
+    width: 30vh;
+}
+
+#modifyCountry form div:first-child label {
+    font-family: 'roboto';
+    font-size: 2em;
+}
 
 
+/* ---------- PAGE DE VISUALISATION D'UNE ACTIVITE ---------- */
 
+#viewActivity {
+    font-family: 'roboto';
+}
 
+#viewActivity h1 {
+    font-family: 'coolvetica';
+}
 
+#viewActivity #state {
+    font-size: 1.2em;
+}
 
+#viewActivity ul {
+    display: flex;
+}
 
+#viewActivity ul li {
+    list-style: none;
+}
+
+#viewActivity  #activityBlock0 img {
+    width: 10vh;
+}
+
+#viewActivity #activityBlock1, #viewActivity #activityBlock3 {
+    display: flex;
+}
+
+#viewActivity #activityBlock1 div input, #viewActivity #activityBlock3 div input {
+    width: 50%;
+}
+
+#viewActivity #activityBlock2, #viewActivity #activityBlock4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#viewActivity #activityBlock2 textarea, #viewActivity #activityBlock4 textarea {
+    width: 80%;
+    height: 10vh;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+#viewActivity  #activityBlock5 img {
+    width: 17vh;
+}
+
+.blockActivity {
+    margin-bottom: 1%
+}
+
+#state {
+    color: black;
+}
+
+/* ---------- PAGE DE MODIFICATION D'UNE ACTIVITE ---------- */
+
+#modifyActivity {
+    font-family: 'roboto';
+    display: block;
+    flex-direction: column;
+}
+
+#modifyActivity h1 {
+    font-family: 'coolvetica';
+}
+
+#modifyActivity div {
+    margin-bottom: 2vh;
+}
+
+#modifyActivity #modifyBlock1 input, #modifyActivity #modifyBlock2 input {
+    width: 25%;
+    padding: 1vh;
+    margin-right: 2vh;
+}
+
+#modifyActivity #modifyBlock1 select {
+    border-radius: 4px;
+    padding: 1vh;
+    width: 15%;
+}
+
+ #modifyActivity #modifyBlock2 input:last-child {
+     width: 4%;
+     border-style: none;
+     padding: 0.5vh;
+     text-align: right;
+     border-radius: 4px;
+     margin-right: 0.5vh;
+}
+
+#modifyActivity #modifyBlock3 {
+    display: flex;
+}
+
+#modifyActivity #modifyBlock3 div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vh;
+}
+
+#modifyActivity #modifyBlock3 div {
+    width: 40%;
+}
+
+#modifyActivity #modifyBlock3 div textarea {
+    width: 100%;
+    height: 15vh;
+    border-radius: 4px;
+}
+
+#modifyActivity #modifyBlock4 select {
+    width: 25%;
+    height: auto;
+    padding: 1vh;
+    border-radius: 4px;
+}
+
+/* ---------- PAGE D'AJOUT D'UNE NOUVELLE ACTIVITE ---------- */
+
+#newActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+#newActivity form {
+    background-image: url("../../public/img/add/wave.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #d2d2d2;
+    width: 60%;
+    height: 100vh;
+    margin: 0;
+}
+
+#newActivityBlock1 {
+    display: block;
+}
+
+#newActivityBlock2 {
+    display: none;
+}
+
+#newActivityBlock1, #newActivityBlock2 {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#newActivityBlock1 div, #newActivityBlock2 div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#newActivityBlock1 div.rightList {
+    display: flex;
+    flex-direction: column;
+}
+
+#newActivityBlock1 div.leftList {
+    display: flex;
+    flex-direction: column;
+}
+
+#newActivityBlock1 div.leftList div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#newActivityBlock1 div.leftList div label {
+    margin-right: 1vh;
+}
+
+#newActivityBlock1 div.leftList #state {
+    width: 2vh;
+    height: 2vh;
+}
+
+#newActivityBlock1 div.leftList #note {
+    width: 5vh;
+    padding: 1vh;
+}
+
+#newActivityBlock2 div.leftList {
+    display: flex;
+    flex-direction: column;
+}
+
+#newActivity .leftList {
+    width: 45%;
+}
+
+#newActivity .rightList {
+    width: 45%;
+}
+
+#newActivity .inputContainer {
+    width: 100%;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+}
+
+#newActivity .selectContainer {
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 2vh;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #5a9aa8;
+    padding: 12px 20px;
+}
+
+#newActivity .selectContainer option {
+    background-color: #a0a0a0;
+}
+
+#newActivity .rightList textarea {
+    height: 37vh;
+}
+
+#newActivity .btnBlock {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#newActivity #next, #newActivity #addButton {
+    background-color: #025e83;
+    width: 15vh;
+    height: 6vh;
+    color: white;
+    font-family: 'roboto';
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+}
+
+#newActivity #addButton {
+    border: none;
+}
+
+#newActivity .backButton:hover {
+    text-decoration: none;
+}
 
 
 

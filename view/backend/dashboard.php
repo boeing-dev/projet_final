@@ -36,9 +36,9 @@
         <div class="blockStatus text-danger">En attente</div>
         <?php } ?>
         <div class="actionBlock">
-            <a href="#" class="text-success"><i class="far fa-eye"></i></a>
-            <a href="#" class="text-warning"><i class="far fa-edit"></i></a>
-            <a href="#" class="text-danger"><i class="far fa-trash-alt"></i></a>
+            <a href="index.php?action=viewActivity&amp;id=<?= $dataActivity['id'] ?>" class="text-success"><i class="far fa-eye"></i></a>
+            <a href="index.php?action=modifyActivity&amp;id=<?= $dataActivity['id'] ?>" class="text-warning"><i class="far fa-edit"></i></a>
+            <a href="index.php?action=deleteView&amp;id=<?= $dataActivity['id'] ?>" class="text-danger"><i class="far fa-trash-alt"></i></a>
         </div>        
         <?php
         echo '</article>';
@@ -48,6 +48,7 @@
 </article>
 
 <?php
+$activity->closeCursor();
 $content = ob_get_clean();
 require('view/template/templateDashboard.php');
 ?>
